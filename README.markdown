@@ -98,3 +98,18 @@ To release a new version of DataPusher:
 
    (Replace both instances of 0.0.1 with the number of the version you're
    releasing.)
+
+## Install stable
+
+    ```bash
+    mkdir -p /usr/lib/ckan/datapusher
+    virtualenv --no-site-packages /usr/lib/ckan/datapusher
+    . /usr/lib/ckan/datapusher/bin/activate
+    pip install /home/<user>/datapusher
+    pip install -r /home/<user>/datapusher/requirements.txt
+
+    python /home/<user>/datapusher/setup.py install
+    cp /home/<user>/datapusher/deployment/datapusher.wsgi /etc/ckan/datapusher
+    cp /home/<user>/datapusher/deployment/datapusher_settings.py /etc/ckan/datapusher
+    deactivate
+    ```
