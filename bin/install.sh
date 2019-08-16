@@ -61,7 +61,7 @@ CKAN_VAR_LIB=/var/lib/ckan/
 APACHE_ETC_DIR=/etc/apache2
 APACHE_ETC_SITES_DIR=$APACHE_ETC_DIR/sites-available
 APACHE_ETC_CONF_DIR=$APACHE_ETC_DIR/conf-available
-APACHE_ETC_PORTS=/etc/apache2/ports.conf
+APACHE_ETC_PORTS=$APACHE_ETC_DIR/ports.conf
 
 # User and group ckan
 CKAN_USER_GROUP=ckan
